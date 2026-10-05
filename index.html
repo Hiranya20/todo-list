@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Application -->
+    <div class="app-container">
+
+        <!-- Header -->
+        <header class="app-header">
+
+            <div>
+                <h1>TaskFlow</h1>
+                <p>Organize your tasks and stay productive.</p>
+            </div>
+
+            <button id="themeToggle" class="theme-btn" type="button">
+                🌙
+            </button>
+
+        </header>
+
+        <!-- Task Form -->
+        <section class="task-form-section">
+
+            <form id="taskForm">
+
+                <!-- Task Name -->
+                <div class="form-group">
+
+                    <label for="taskInput">
+                        Task
+                    </label>
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter your task..."
+                        maxlength="100"
+                        required
+                    >
+
+                </div>
+
+                <!-- Priority -->
+                <div class="form-group">
+
+                    <label for="prioritySelect">
+                        Priority
+                    </label>
+
+                    <select id="prioritySelect">
+
+                        <option value="low">
+                            Low
+                        </option>
+
+                        <option value="medium" selected>
+                            Medium
+                        </option>
+
+                        <option value="high">
+                            High
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- Due Date -->
+                <div class="form-group">
+
+                    <label for="dueDate">
+                        Due Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="dueDate"
+                    >
+
+                </div>
+
+                <!-- Add Button -->
+                <button
+                    type="submit"
+                    id="addTaskBtn"
+                >
+                    + Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Search and Filters -->
+        <section class="control-section">
+
+            <!-- Search -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="🔍 Search tasks..."
+                >
+
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-buttons">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                    type="button"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="active"
+                    type="button"
+                >
+                    Active
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="completed"
+                    type="button"
+                >
+                    Completed
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Statistics -->
+        <section class="statistics">
+
+            <div class="stat-card">
+
+                <span class="stat-title">
+                    Total
+                </span>
+
+                <span
+                    id="totalTasks"
+                    class="stat-number"
+                >
+                    0
+                </span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span class="stat-title">
+                    Active
+                </span>
+
+                <span
+                    id="activeTasks"
+                    class="stat-number"
+                >
+                    0
+                </span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span class="stat-title">
+                    Completed
+                </span>
+
+                <span
+                    id="completedTasks"
+                    class="stat-number"
+                >
+                    0
+                </span>
+
+            </div>
+
+        </section>
+
+        <!-- Task List -->
+        <section class="tasks-section">
+
+            <div class="section-header">
+
+                <h2>My Tasks</h2>
+
+                <button
+                    id="clearCompletedBtn"
+                    type="button"
+                >
+                    Clear Completed
+                </button>
+
+            </div>
+
+            <!-- Tasks will be generated using JavaScript -->
+            <div id="taskList">
+
+                <!-- Empty state -->
+                <div
+                    id="emptyState"
+                    class="empty-state"
+                >
+
+                    <div class="empty-icon">
+                        📋
+                    </div>
+
+                    <h3>No tasks yet</h3>
+
+                    <p>
+                        Add your first task to get started.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
