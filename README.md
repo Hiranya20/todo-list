@@ -63,7 +63,7 @@ This project helped me practice:
 Add screenshots of the application here.
 
 ```text
-![To-Do List Pro Screenshot](screenshot.png)
+![To-Do List Screenshot](screenshot.png)
 ```
 
 ## 🌐 Live Demo
