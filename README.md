@@ -1,4 +1,4 @@
-# ✅ To-Do List Pro
+# ✅ To-Do List 
 
 A responsive and user-friendly **To-Do List web application** developed using **HTML, CSS, and JavaScript**.
 
