@@ -69,9 +69,9 @@ Add screenshots of the application here.
 
 Add your GitHub Pages link here:
 
-```text
+
 https://Hiranya20.github.io/todo-list-pro/
-```
+
 
 ## 👨‍💻 Author
 
