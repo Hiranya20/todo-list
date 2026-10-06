@@ -62,9 +62,8 @@ This project helped me practice:
 
 Add screenshots of the application here.
 
-```text
+
 ![To-Do List Screenshot](./screenshot.png)
-```
 
 ## 🌐 Live Demo
 
